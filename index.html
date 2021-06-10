@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Tecnica</title>
+</head>
+<body>
+    <script>
+        function gradingStudents(grades) {
+            // Write your code here
+            //[ 73, 67, 38, 33 ]
+            console.log(grades);
+            for(let x=0;x<grades.length;x++){
+                if((grades[x].toString().endsWith('8') || grades[x].toString().endsWith('3'))&& grades[x]>35){
+                    grades[x]=grades[x]+2;
+                }else if((grades[x].toString().endsWith('9')||grades[x].toString().endsWith('4'))&& grades[x]>35){
+                    grades[x]=grades[x]+1;
+                }
+                else{
+                    grades[x]=grades[x];
+                }
+            }
+        
+            return grades;
+        }
+    </script>
+</body>
+</html>
